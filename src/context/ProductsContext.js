@@ -10,7 +10,6 @@ const ProductsContext = ({ children }) => {
     const API = "http://localhost:3000/products";
 
     const [products, setProducts] = useState([])
-
     async function addProduct(product) {
         await axios.post(API, product)
         getProduct()
